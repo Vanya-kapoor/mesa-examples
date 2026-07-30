@@ -59,7 +59,7 @@ class DeffuantWeisbuchModel(Model):
         symmetrically.
         """
         agent_list = list(self.agents)
-        # this is fix by vanya
+
         for _ in range(self.n):
             agent_a, agent_b = self.random.sample(agent_list, 2)
             self.attempted_interactions += 1
